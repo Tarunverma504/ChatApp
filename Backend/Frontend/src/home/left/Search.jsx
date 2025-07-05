@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { IoSearch } from "react-icons/io5"
-import useGetAllUsers from "../../context/userGetAllusers.jsx";
+import useGetAllUsers from "../../context/userGetAllUsers.jsx";
 import useConversation from "../../stateManage/useConversation.js";
 import toast from "react-hot-toast";
 
