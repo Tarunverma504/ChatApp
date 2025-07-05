@@ -1,10 +1,10 @@
 services:
   - type: web
-    name: chatapp-frontend
+    name: chatapp-fullstack
     env: node
-    buildCommand: cd Frontend && npm install && npm run build
-    startCommand: cd Frontend && npm run preview
+    plan: free
+    buildCommand: npm run build
+    startCommand: npm start
     envVars:
       - key: NODE_ENV
-        value: development
-    staticPublishPath: Frontend/dist
+        value: production
