@@ -1,6 +1,6 @@
 import React from "react";
 import User from "./User";
-import userGetAllusers from "../../context/userGetAllusers.jsx";
+import userGetAllusers from "../../context/userGetAllUsers.jsx";
 
 export default function Users(){
     const [allUsers, loading] = userGetAllusers();
