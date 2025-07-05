@@ -2,7 +2,10 @@ services:
   - type: web
     name: chatapp-fullstack
     env: node
-    buildCommand: npm install --include=dev && npm install --prefix Frontend --production=false --include=dev && npm run build
+    buildCommand: |
+      NODE_ENV=development npm install &&
+      NODE_ENV=development npm install --prefix Frontend &&
+      npm run build
     startCommand: npm start
     envVars:
       - key: NODE_ENV
